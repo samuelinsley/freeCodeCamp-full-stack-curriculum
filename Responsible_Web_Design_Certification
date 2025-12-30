@@ -94,3 +94,39 @@ Build a Book Store web page
 </body>
 </html>
 
+Build a Travel Agency Page
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="width=device-width, initial-scale=1.0"/>
+    <title>Sinsley's Travels</title>
+  </head>
+  <body>
+    <h1>Sinsley's Travels</h1>
+    <p>European travel opportunities for digital nomads</p>
+    <h2>Packages</h2>
+    <p>Iberian peninsula, Eastern Europe, Northern Europe and more!</p>
+    <ul>
+      <li><a href="https://www.freecodecamp.org/learn" target="_blank">Group Travels</a></li>
+      <li><a href="https://www.freecodecamp.org/learn" target="_blank">Private Tours</a></li>
+    </ul>
+    <h2>Top Itineraries</h2>
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">
+        <img src="https://pixabay.com/photos/valencia-spain-calatrava-sunset-1049389/" alt="Valencian Science Museum and Aquarium"></a>
+      <figcaption>Spain</figcaption>
+    </figure>
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">
+      <img src="https://pixabay.com/photos/dubrovnik-croatia-kings-landing-512798/" alt="Croatian Old Town"></a>
+      <figcaption>Croatia</figcaption>
+    </figure>
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">
+      <img src="https://pixabay.com/photos/copenhagen-river-denmark-8513129/" alt="Copenhagen Streets"></a>
+      <figcaption>Denmark</figcaption>
+    </figure>
+  </body>
+</html>
