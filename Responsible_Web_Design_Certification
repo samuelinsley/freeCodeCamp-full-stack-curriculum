@@ -496,5 +496,57 @@ Build a Book Catalog Table:
 </body>
 </html>
 
+Build a Survey Form
+
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for using our free coding platform. Please fill out the form below to provide valuable feedback.</p>
+    <form id="survey-form">
+      <label id="name-label">Name</label>
+      <input required id="name" type="text" placeholder="Joe Bloggs"/>
+      <label id="email-label">Email</label>
+      <input required id="email" type="email" placeholder="joe.bloggs@gmail.com"/>
+      <label id="number-label">Age (optional)</label>
+      <input id="number" type="number" min="2" max="10" placeholder="Optional"/>
+      <p>What option best describes your current experience?</p>
+      <select id="dropdown">
+        <option value="New User">New User</option>
+        <option value="Intermediate User">Intermediate User</option>
+        <option value="Experienced User">Experienced User</option>
+      </select>
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <input type="radio" id="yes-option" name="choice" value="recommendation" />
+      <label for="recommendation">Yes</label>
+      <input type="radio" id="no-option" name="choice" value="recommendation" />
+      <label for="recommendation">No</label>
+      <input type="radio" id="maybe-option" name="choice" value="recommendation" />
+      <label for="recommendation">Maybe</label>
+      <p>What would you like to see improved?</p>
+      <input type="checkbox" id="improvement" name="choice" value="improvement"/>
+      <label for="improvement">Wiki</label>
+      <input type="checkbox" id="improvement" name="choice" value="improvement" />
+      <label for="improvement">Blogs</label>
+      <input type="checkbox" id="improvement" name="choice" value="improvement" />
+      <label for="improvement">Courses</label>
+      <input type="checkbox" id="improvement" name="choice" value="improvement" />
+      <label for="improvement">Videos</label>
+      <p>Any other comments or suggestions?</p>
+      <textarea cols="30" rows"10" name="comments" id="comments" placeholder="other comments"></textarea>
+      <p>Submit your form:</p>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
+
 ** end of index.html **
+
 
