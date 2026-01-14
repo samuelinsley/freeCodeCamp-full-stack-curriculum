@@ -549,4 +549,35 @@ Build a Survey Form
 
 ** end of index.html **
 
+Debug a Donation Form
+
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donation Form</title>
+</head>
+<body>
+  <h1>Donation Form</h1>
+  <form>
+    <label for="name">Full Name:</label>
+    <input type="text" required name="name" id="name"/>
+
+    <label for="email">Email Address:</label>
+    <input type="email" required name="email" id="email">
+
+    <label for="amount">Donation Amount ($):</label>
+    <input type="number" required name="amount" id="amount"/>
+
+    <input type="checkbox" name="newsletter" id="newsletter"/>
+    <label for="newsletter">Subscribe</label>
+
+    <input type="submit" value="Send" id="submit"/>
+  </form>
+</body>
+</html>
+
+** end of index.html **
 
