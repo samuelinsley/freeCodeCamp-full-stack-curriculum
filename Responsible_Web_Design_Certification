@@ -621,5 +621,44 @@ Build a Checkout Page
 
 ** end of index.html **
 
+Design a Movie Review Page
+
+** start of index.html **
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rise Beyond — Movie Review</title>
+</head>
+<body>
+  <main>
+    <h1>Rise Beyond</h1>
+    <img src="https://cdn.freecodecamp.org/curriculum/labs/rise-beyond-2.png"
+         alt="Movie poster for Rise Beyond featuring the lead character standing on a cliff at sunrise." />
+
+    <p>Rise Beyond follows Ethan Carter as he embarks on a journey of redemption and discovery after losing everything he once held dear.</p>
+
+    <p>
+      <strong>Movie Rating:</strong>
+      <span aria-hidden="true">⭐⭐⭐⭐⭐⭐⭐⭐⭐☆</span>
+      (9/10)
+    </p>
+
+    <h2>Cast Members</h2>
+    <ul>
+      <li><strong>James Holloway</strong> as Ethan Carter</li>
+      <li><strong>Olivia Park</strong> as Maya Greene</li>
+      <li><strong>Rafael Ortega</strong> as Marcus Hale</li>
+      <li><strong>Aisha Bennett</strong> as Dr. Lena Flores</li>
+      <li><strong>Connor Shaw</strong> as Sheriff Briggs</li>
+    </ul>
+  </main>
+</body>
+</html>
+
+** end of index.html **
+
 
 
