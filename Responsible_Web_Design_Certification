@@ -804,6 +804,134 @@ a {
 
 ** end of styles.css **
 
+Build-a-stylized-to-do-list
+
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Styled To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <ul class="todo-list">
+        <li>
+            <input type="checkbox" id="task1">
+            <label for="task1">Task 1</label>
+            <ul class="sub-item">
+                <li><a class="sub-item-link" href="https://example.com" target="_blank">Subtask 1</a></li>
+            </ul>
+        </li>
+        <li>
+            <input type="checkbox" id="task2">
+            <label for="task2">Task 2</label>
+            <ul class="sub-item">
+                <li><a class="sub-item-link" href="https://example.com" target="_blank">Subtask 2</a></li>
+            </ul>
+        </li>
+        <li>
+            <input type="checkbox" id="task3">
+            <label for="task3">Task 3</label>
+            <ul class="sub-item">
+                <li><a class="sub-item-link" href="https://example.com" target="_blank">Subtask 3</a></li>
+            </ul>
+        </li>
+        <li>
+            <input type="checkbox" id="task4">
+            <label for="task4">Task 4</label>
+            <ul class="sub-item">
+                <li><a class="sub-item-link" href="https://example.com" target="_blank">Subtask 4</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.todo-list li {
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.sub-item {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.sub-item li {
+    background-color: #f9f9f9;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border-left: 3px solid #3498db;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.sub-item-link {
+    color: #3498db;
+}
+
+.sub-item-link:link {
+    color: #3498db;
+}
+
+.sub-item-link:hover {
+    color: #2980b9;
+}
+
+.sub-item-link:active {
+    color: #1f618d;
+}
+
+.sub-item-link:visited {
+    color: #8e44ad;
+}
+
+.sub-item-link:focus {
+    outline: 2px solid #2980b9;
+    outline-offset: 2px;
+}
+
+** end of styles.css **
+
+
 
 
 
