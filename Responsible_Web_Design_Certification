@@ -1018,6 +1018,220 @@ body {
 
 ** end of styles.css **
 
+Build a job application form
+
+HTML
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <form>
+        <h1>Job Application Form</h1>
+
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your full name"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email address"
+          required
+        />
+
+        <label for="position">Position</label>
+        <select id="position" name="position" required>
+          <option value="" disabled selected>Select a position</option>
+          <option value="fullstack">Full-Stack Developer</option>
+          <option value="frontend">Front-End Developer</option>
+          <option value="backend">Back-End Developer</option>
+          <option value="other">Other</option>
+        </select>
+
+        <fieldset class="radio-group">
+          <legend>Availability</legend>
+
+          <div class="radio-option">
+            <input
+              type="radio"
+              id="full-time"
+              name="availability"
+              value="full-time"
+              required
+            />
+            <label for="full-time">Full-Time</label>
+          </div>
+
+          <div class="radio-option">
+            <input
+              type="radio"
+              id="part-time"
+              name="availability"
+              value="part-time"
+            />
+            <label for="part-time">Part-Time</label>
+          </div>
+
+          <div class="radio-option">
+            <input
+              type="radio"
+              id="internship"
+              name="availability"
+              value="internship"
+            />
+            <label for="internship">Internship</label>
+          </div>
+        </fieldset>
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Write a short message..."
+          rows="5"
+          required
+        ></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+CSS
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: midnightblue;
+  color: whitesmoke;
+  margin: 0;
+  padding: 24px;
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 10px;
+  background-color: #ffffff1a;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 2px solid #9aa4b2;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  color: whitesmoke;
+  outline: none;
+}
+
+/* 11) focus (order matters) */
+input:focus,
+textarea:focus {
+  border-color: gold;
+}
+
+/* 12) invalid (MUST be in this order + red) */
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+/* 13) valid (MUST be in this order + green) */
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+/* 19) first input styled differently (exact selector the tests want) */
+input:first-of-type {
+  border-radius: 18px;
+  border-width: 3px;
+}
+
+/* Radio group wrapper */
+.radio-group {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+/* Make radios styleable (and override any first-of-type effects on radios) */
+.radio-group input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+  background-color: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/* 15 + 16 + 17) exact selector required */
+.radio-group input[type="radio"]:checked {
+  border-color: gold;                            /* 15 */
+  background-color: rgba(255, 215, 0, 0.35);     /* 16 */
+  box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.25); /* 17 */
+}
+
+/* 18) checked changes label color */
+.radio-group input[type="radio"]:checked + label {
+  color: gold;
+}
+
+/* 14) button hover */
+button {
+  width: 100%;
+  margin-top: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #2563eb;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
 
 
 
